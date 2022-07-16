@@ -1,6 +1,6 @@
 
 :root{
-    --pink:#e84393;
+    --orange:orangered;
 }
 
 
@@ -18,6 +18,51 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #8b0000;
+    color:white;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: orangered;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/main.png);
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+.home .content  h3{
+    font-size: 6rem;
+    color: orangered;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color:orangered;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color:orangered;
+    padding: 1rem 0;
+    line-height: 1.5;
 }
 
 header{
@@ -41,3 +86,100 @@ header .logo{
 header .logo span{
     color:var(--pink);
 }
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    
+}
+header .navbar a:hover{
+    color:orangered;
+}
+header .icons a{
+    font-size: 2.5rem;
+    color : #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color: orangered;
+}
+
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,0.3);
+    display: none;
+}  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+    }
+}
+@media (max-width:768px){
+    html .fa-bars{
+        display: block;
+    
+    }
+    header .navbar{
+        position: absolute;
+        top:0; left:0; right:0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,0.1);
+        display: block;
+    }
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+}
+    
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+        
+    }
+}
+    
+    
