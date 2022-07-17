@@ -142,6 +142,8 @@ header .fa-bars{
     gap: 1.5rem;
 }
 
+
+
 .menu .box-container .box{
     padding: 2.5rem;
     background: pink;
@@ -163,7 +165,9 @@ header .fa-bars{
     color: black;
     border-radius: 50%;
 }
-.menu .box-container .box .fa-heart:hover,
+.menu .box-container .box .fa-heart:hover {
+    background: pink;
+}
 .menu .box-container .box .fa-eye:hover{
     background: pink;
     
@@ -194,6 +198,51 @@ header .fa-bars{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-form-container {
+    max-width: 40.75rem;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    background-color: yellow;
+}
+
+.contact-form-container label {
+    line-height: 2.7rem;
+    font-weight: 700;
+}
+
+.conact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.975rem;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px soild black;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
 }
     
 /*-------------footer--------------*/
@@ -241,7 +290,7 @@ header .fa-bars{
         border: .1rem solid rgba(0,0,0,0.1);
         display: block;
     }
-    .home .content h3{
+    .home .content h1{
         font-size: 5rem;
     }
     .home .content span{
