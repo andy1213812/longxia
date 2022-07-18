@@ -257,7 +257,6 @@ header .fa-bars{
   .contact-form-container textarea {
     min-height: 20rem;
     max-width: 58rem;
-    min-width: 58rem;
     font-size: 1.6rem;
     background-color:var(--primary-color);
   }
